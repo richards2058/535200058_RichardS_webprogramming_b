@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Biodata.css">
+    <title>Biodata 535200058</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+</head>
+<body style="background-color: rgb(35, 35, 35);">
+    <!-- SIDE NAVIGATION -->
+    <div id="sideNav" >
+        <nav>
+            <a href="#banner" >My Name<span></span></a> 
+            <a href="#about" >About Me<span></span></a> 
+            <a href="#bio" >Bio<span></span></a>
+            <a href="#education">Education History<span></span></a>
+            <a href="#contact">Contact<span></span></a>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <i class="fas fa-bars" id="menu"></i>
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+        
+  
+        sideNav.style.width = "0px";
+        document.documentElement.style.setProperty("--listPadd", "0px");
+  
+        menuBtn.onclick = function () {
+          if (sideNav.style.width == "0px") {
+            sideNav.style.width = "180px";
+            menu.classList.remove("fa-bars");
+            menu.classList.add("fa-window-close");
+
+            document.documentElement.style.setProperty("--listPadd", "10px");
+          } else {
+            sideNav.style.width = "0px";
+            menu.classList.remove("fa-window-close");
+            menu.classList.add("fa-bars");
+            document.documentElement.style.setProperty("--listPadd", "0px");
+          }
+        };
+
+      </script>
+    <!-- END OF SIDE NAVIGATION -->
+
+    <section id="banner">
+        <img  class="avatar"src="img/avatar.jpg" alt="avatar" >
+        <div class="banner-text">
+            <h4 style="font-size: 200%;">Hello, My name is</h4>
+            <h1 style="font-size: 500%;">Richard Stephen</h1>
+        </div>
+    
+    </section>
+
+    <section id="about" class="lightPanel">
+        <h1>About Me</h1>
+        <div>
+            <p style="text-indent: 2em;"> I'm a student at Tarumanegara University, majoring in computer science. Since I was a kid I've always fascinated by computers, mostly by the games that I can play on the computer. But I wasn't smart enough to learn how computers work. When I graduated high school, I've gained some knowledge about computers work, and wanted to know more about it. So I decided to pick computer science major, and I ended up here at Tarumanegara University. </p>
+        </div>
+
+        <div class="line"></div>
+    </section>
+
+    <section id="bio" class="darkPanel">
+
+        <h1>Bio</h1>
+        <div>
+            <p>Gender          : Male</p>
+            <p>Date of Birth   : November 11th, 2001</p>
+            <p>Age             : 19</p>
+            <p>City / Province : Pontianak / Kalimantan Barat</p>
+        </div>
+
+        <div class="line"></div>
+        
+    </section>
+
+    <section id="education" class="lightPanel">
+        <h1>Education History</h1>
+
+        <div>
+            <!-- image -->
+            <div class="education-img">
+                <img src="img/hatYellow.png" alt="hat" >
+            </div>
+
+            <!-- text -->
+            <div class="education-list">
+                <div>
+                    <div class="eduList-icon">
+                        <i class="fas fa-school"></i></div>
+
+                    <div class="eduList-text">
+                        <p>Bina Mulia High School Pontianak</p>
+                        <p style="font-weight: 500;">2012 - 2019</p></div>
+                </div>
+                <div>
+                    <div class="eduList-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+
+                    <div class="eduList-text">
+                        <p>Tarumanegara University</p>
+                        <p style="font-weight: 500;">2020 - Now</p>
+                    </div>  
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="line"></div>
+
+    </section>
+
+    <section id="contact" class="darkPanel">
+        <h1>Contact</h1>
+        <div style="font-size: 130%;">
+            <i class="fas fa-envelope"></i>
+            <span>Email : richard.535200058@stu.untar.ac.id</span><br>
+
+            <i class="fas fa-paper-plane"></i>
+            <a class="link" href="mailto:richard.535200058@stu.untar.ac.id">Send me an email</a>
+        </div>
+        <div class="line"></div>
+    </section>
+
+    
+</body>
+<footer>
+    <div id="backTop">
+        <a href="#banner"><i class="fas fa-arrow-up"></i></a>
+    </div>
+</footer>
+</html>

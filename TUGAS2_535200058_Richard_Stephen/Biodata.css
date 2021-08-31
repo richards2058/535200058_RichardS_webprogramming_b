@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Merienda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Merienda:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+*{
+    margin: 0px 1%;
+}
+:root{
+    --mainColor: rgb(255, 157, 0);
+    --secondColor: rgb(50, 50, 50);
+    --listPadd : 10px;
+}
+
+section div{
+    margin: 2% 0 0 3%;
+}
+
+/* SIDE NAV */
+#sideNav {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    right: 2%;
+    top: 0;
+    background: linear-gradient(rgb(224, 101, 0) , var(--mainColor) 50%)  ;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#sideNav nav{
+    margin: 70px 0 0;
+    width: 100%;
+    /* background-color: red; */
+}
+#sideNav nav a{
+    display: block;
+    position: relative;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding: var(--listPadd);
+    margin-left: 0;
+    color: white;
+    font-family: 'Merienda';
+    text-decoration: none;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden ;
+}
+#sideNav nav a span{
+    margin-left: 0;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    
+    z-index: -1;
+    transition: 0.5s;
+}
+#sideNav nav a:hover{
+    color: var(--secondColor);
+}
+#sideNav nav a:hover span{
+    height: 100%;
+}
+#menuBtn i{
+    padding:10px 11px 10px;
+    font-size: 28px;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    background: var(--mainColor);
+    border: 2px solid var(--secondColor);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--secondColor);
+    z-index: 5;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+/* SIDE NAV */
+
+/* banner */
+#banner{
+
+    background: linear-gradient(rgb(255, 217, 156,0.4),var(--mainColor) 75%), url(img/BG.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow:auto;
+    display: flex;
+    justify-content: center;
+}
+.banner-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0%;
+    width: 75%;
+    color: white;
+    font-size: 150%;
+    font-family: 'Courgette';
+}
+.avatar{
+    /* float:left; */
+    width: 250px;
+    height: 250px;
+    margin: 2%;
+  
+    border: 10px double var(--secondColor);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px var(--secondColor);
+}
+/* banner */
+
+/* about */
+#about div{
+    font-size: 150%;
+}
+
+#about div p{
+    font-size: 130%;
+}
+/* about */
+
+/* bio */
+#bio div p{
+    font-size: 130%;
+    white-space: pre-wrap;
+    
+    text-align: left;
+}
+/* bio */
+
+/* contact */
+#contact div span,a,i{
+    font-size: 130%;
+}
+/* contact */
+
+/* education */
+#education div{
+    display: flex;
+}
+
+#education .education-img{
+    flex-basis: 30%;
+    /* background-color: aqua; */
+}
+
+#education .education-img img{
+    width: 250px; 
+    /* height: 70%; */
+    margin: auto;
+    border: 10px double var(--secondColor); 
+    border-radius: 50%;
+    box-shadow: 0 0 15px black;
+    
+} 
+
+/* list kanan */
+#education .education-list {
+    /* flex-basis: 50%; */
+    flex-grow: 1;
+    /* background-color: blue; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#education .education-list div{
+    align-items: center;
+    flex-direction: row;
+}
+
+/* icon */
+#education .education-list .eduList-icon .fas{
+    padding: 15px;
+    width: 100px;
+    line-height: 100px;
+    font-size: 70px;
+    border-radius: 8px;
+    color: var(--secondColor);
+    text-align: center;
+    border: 3px solid var(--secondColor);
+    border-radius: 50%;
+}
+/* icon text */
+
+#education .education-list .eduList-text{
+    flex-direction: column;
+ 
+    align-items: stretch;
+    justify-content: center;
+    font-family: 'Caveat';
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+#education .education-list .eduList-text p{
+
+    white-space: pre-wrap;
+    
+}
+
+/* others */
+.darkPanel{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    padding: 2% 2%;
+    font-family: 'Kalam', cursive;
+}
+
+.darkPanel h1{
+    font-family: 'Merienda';
+    font-size: 200%;
+}
+.lightPanel{
+    padding: 2% 2%;
+    background-color:white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(50, 50, 50);
+    font-family: 'Kalam', cursive;
+}
+.lightPanel h1{
+    font-family: 'Merienda';
+    font-size: 200%;
+}
+.line{
+    background-color: var(--mainColor); 
+    width: auto; 
+    height: 2px; 
+    margin-top: 2%;
+}
+
+#backTop a i{
+    padding:8px 10px 8px;
+    font-size: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    background: var(--secondColor);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.link{
+    white-space: pre;
+    text-decoration: none;
+    color: white;
+}
+/* others */
+
+
+/* media query */
+@media screen and (max-width: 770px) {
+    #banner{
+        display:block;
+        
+    }
+
+    .avatar{
+        width: 50%;
+        height: 50%;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        
+    }
+
+    .banner-text {
+        
+        display: block;
+        margin: 20px auto 30px;
+        text-align: center;
+    }
+
+    #education div{
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    #education .education-list div{
+        flex-direction: row;
+    }
+    /* .preWS p{
+        text-align: center;
+    } */
+}
+  

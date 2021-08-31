@@ -1,0 +1,6 @@
+/* adjacent sibling : untuk siblings */
+/* general sibling : untuk child */
+
+div ~ p {
+    background-color: yellow;
+}

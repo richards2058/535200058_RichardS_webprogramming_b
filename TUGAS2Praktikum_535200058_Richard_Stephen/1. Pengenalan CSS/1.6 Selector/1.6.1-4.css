@@ -1,0 +1,26 @@
+/* 1.6.1. universal selector */
+*{
+    font-family: 'calibri';
+}
+
+/* 1.6.2. tag/element HTML */
+h1{
+    color: violet;
+}
+
+/* 1.6.3. class selector */
+.isiteks{
+    color : #99ccff;
+    font-size: 36px;
+}
+
+p.isiteks{
+    color: red; /* memberikan warna merah pada paragraf*/
+    font-size: 36px;
+}
+
+/* 1.6.4. ID selector */
+#footer {
+    color: blue;
+    border: 1px solid black;
+}

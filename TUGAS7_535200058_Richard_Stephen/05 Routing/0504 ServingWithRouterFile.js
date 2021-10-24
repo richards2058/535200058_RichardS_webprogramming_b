@@ -18,9 +18,14 @@ const port = 3000,
     });
   };
 
-router.get("/", (red, res) => {
-  res.writeHead(httpStatusCodes.OK, htmlContentType);
+router.get("/", (req, res) => {
+  res.writeHead(httpStatusCodes.OK, plainTestContentType);
   res.end("INDEX");
+});
+
+router.get("/index.html", (req, res) => {
+  res.writeHead(httpStatusCodes.OK, htmlContentType);
+  customReadFile("views/index.html", res);
 });
 
 router.post("/", (req, res) => {
